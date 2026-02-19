@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-to-end">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4E79"/>
+    </marker>
+    <marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-to-end">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C62828"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1F4E79">COMPOSABLE ROOT DERIVATION</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#666">Stateless — no stored correct answer, no oracle, no error signal</text>
+
+  <!-- ═══ THREE INPUTS ═══ -->
+
+  <!-- Biometric -->
+  <rect x="40" y="90" width="200" height="140" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+  <text x="140" y="118" text-anchor="middle" font-size="13" font-weight="bold" fill="#2E7D32">BIOMETRIC</text>
+  <text x="140" y="134" text-anchor="middle" font-size="9" fill="#2E7D32" font-weight="bold">Inherence Factor</text>
+  <line x1="60" y1="144" x2="220" y2="144" stroke="#2E7D32" stroke-opacity="0.3"/>
+  <text x="140" y="162" text-anchor="middle" font-size="9" fill="#333">Multi-modal fusion</text>
+  <text x="140" y="176" text-anchor="middle" font-size="9" fill="#333">Processed in secure element</text>
+  <text x="140" y="190" text-anchor="middle" font-size="9" fill="#333">Never leaves device</text>
+  <text x="140" y="208" text-anchor="middle" font-size="9" fill="#C62828" font-weight="bold">ALWAYS REQUIRED</text>
+
+  <!-- Root Secret -->
+  <rect x="280" y="90" width="200" height="140" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="380" y="118" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">ROOT SECRET</text>
+  <text x="380" y="134" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="bold">Possession Factor</text>
+  <line x1="300" y1="144" x2="460" y2="144" stroke="#1565C0" stroke-opacity="0.3"/>
+  <text x="380" y="162" text-anchor="middle" font-size="9" fill="#333">Composable gestures:</text>
+  <text x="380" y="176" text-anchor="middle" font-size="9" fill="#555">Finger · Expression · Voice</text>
+  <text x="380" y="190" text-anchor="middle" font-size="9" fill="#555">Tap rhythm · Keystroke · Pattern</text>
+  <text x="380" y="208" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="bold">AUTO FROM ENCLAVE</text>
+
+  <!-- Manual Passphrase -->
+  <rect x="520" y="90" width="200" height="140" rx="10" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <text x="620" y="118" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">PASSPHRASE</text>
+  <text x="620" y="134" text-anchor="middle" font-size="9" fill="#E65100" font-weight="bold">Knowledge Factor</text>
+  <line x1="540" y1="144" x2="700" y2="144" stroke="#E65100" stroke-opacity="0.3"/>
+  <text x="620" y="162" text-anchor="middle" font-size="9" fill="#333">Selects persona when present</text>
+  <text x="620" y="176" text-anchor="middle" font-size="9" fill="#333">Empty string = default persona</text>
+  <text x="620" y="190" text-anchor="middle" font-size="9" fill="#333">Different phrase = different vault</text>
+  <text x="620" y="208" text-anchor="middle" font-size="9" fill="#E65100" font-weight="bold">OPTIONAL</text>
+
+  <!-- Arrows down to hash -->
+  <line x1="140" y1="230" x2="140" y2="268" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="380" y1="230" x2="380" y2="268" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="620" y1="230" x2="620" y2="268" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Concatenation bar -->
+  <rect x="80" y="273" width="600" height="36" rx="6" fill="#1F4E79"/>
+  <text x="380" y="296" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Hash( biometric  ∥  root_secret_hash  ∥  manual_passphrase )</text>
+
+  <!-- Arrow down to Bio Root -->
+  <line x1="380" y1="309" x2="380" y2="340" stroke="#1F4E79" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- Bio Root output -->
+  <rect x="280" y="345" width="200" height="44" rx="22" fill="#1F4E79"/>
+  <text x="380" y="372" text-anchor="middle" font-size="14" font-weight="bold" fill="white">BIO ROOT (256-bit)</text>
+
+  <!-- Arrow down to key hierarchy -->
+  <line x1="380" y1="389" x2="380" y2="414" stroke="#1F4E79" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- Key hierarchy fan-out -->
+  <line x1="380" y1="420" x2="160" y2="460" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="380" y1="420" x2="380" y2="460" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="380" y1="420" x2="600" y2="460" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="80" y="465" width="160" height="28" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="160" y="484" text-anchor="middle" font-size="10" fill="#2E7D32">Branch Key: Bank</text>
+
+  <rect x="300" y="465" width="160" height="28" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="380" y="484" text-anchor="middle" font-size="10" fill="#1565C0">Branch Key: Hospital</text>
+
+  <rect x="520" y="465" width="160" height="28" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="600" y="484" text-anchor="middle" font-size="10" fill="#E65100">Branch Key: Employer</text>
+
+  <!-- ═══ RIGHT SIDE: Stateless Property ═══ -->
+  <rect x="750" y="90" width="185" height="310" rx="10" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
+  <text x="842" y="116" text-anchor="middle" font-size="11" font-weight="bold" fill="#C62828">STATELESS SILENCE</text>
+  <line x1="765" y1="126" x2="920" y2="126" stroke="#C62828" stroke-opacity="0.3"/>
+
+  <text x="842" y="148" text-anchor="middle" font-size="9" fill="#333" font-weight="bold">No stored correct answer</text>
+  <text x="842" y="172" text-anchor="middle" font-size="9" fill="#555">Every input combination</text>
+  <text x="842" y="186" text-anchor="middle" font-size="9" fill="#555">produces a valid 256-bit key</text>
+
+  <text x="842" y="212" text-anchor="middle" font-size="9" fill="#333" font-weight="bold">No error on failure</text>
+  <text x="842" y="236" text-anchor="middle" font-size="9" fill="#555">Wrong inputs produce a key</text>
+  <text x="842" y="250" text-anchor="middle" font-size="9" fill="#555">that decrypts nothing</text>
+
+  <text x="842" y="276" text-anchor="middle" font-size="9" fill="#333" font-weight="bold">No oracle</text>
+  <text x="842" y="300" text-anchor="middle" font-size="9" fill="#555">Attacker cannot distinguish</text>
+  <text x="842" y="314" text-anchor="middle" font-size="9" fill="#555">wrong bio from wrong secret</text>
+  <text x="842" y="328" text-anchor="middle" font-size="9" fill="#555">from wrong passphrase from</text>
+  <text x="842" y="342" text-anchor="middle" font-size="9" fill="#555">"this person has no vault"</text>
+
+  <text x="842" y="374" text-anchor="middle" font-size="9" fill="#C62828" font-weight="bold">Unique to Bonafide</text>
+
+  <!-- Arrow from hash to stateless box -->
+  <line x1="680" y1="291" x2="748" y2="291" stroke="#C62828" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a-red)"/>
+
+  <!-- Footer -->
+  <text x="480" y="520" text-anchor="middle" font-size="10" fill="#999">BONAFIDE™ SPECIFICATION V1.0 — Part 2, Sections 2–3</text>
+  <text x="480" y="536" text-anchor="middle" font-size="9" fill="#BBB">Sly Technologies Inc. — bonafide.id</text>
+</svg>

@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-to-end">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4E79"/>
+    </marker>
+    <marker id="ar-w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-to-end">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="white"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1F4E79">THIRD-PARTY ACCESS FRAMEWORK</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#666">Four categories — all use purpose-specific keys, none use institutional keys</text>
+
+  <!-- ═══ CENTER: Bonafide API ═══ -->
+  <rect x="370" y="80" width="220" height="50" rx="25" fill="#1F4E79"/>
+  <text x="480" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="white">BONAFIDE API</text>
+
+  <!-- Lines from API to four categories -->
+  <line x1="400" y1="130" x2="130" y2="195" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="450" y1="130" x2="355" y2="195" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="510" y1="130" x2="600" y2="195" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="560" y1="130" x2="825" y2="195" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ═══ CATEGORY 1: User Sharing ═══ -->
+  <rect x="20" y="200" width="220" height="420" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+  <rect x="20" y="200" width="220" height="40" rx="10" fill="#2E7D32"/>
+  <rect x="20" y="224" width="220" height="16" fill="#2E7D32"/>
+  <text x="130" y="226" text-anchor="middle" font-size="13" font-weight="bold" fill="white">USER SHARING</text>
+
+  <text x="130" y="264" text-anchor="middle" font-size="10" font-weight="bold" fill="#2E7D32">Authorization</text>
+  <text x="130" y="278" text-anchor="middle" font-size="9" fill="#333">User's explicit vault action</text>
+
+  <text x="130" y="302" text-anchor="middle" font-size="10" font-weight="bold" fill="#2E7D32">Key Lifetime</text>
+  <text x="130" y="316" text-anchor="middle" font-size="9" fill="#333">Minutes to permanent</text>
+
+  <text x="130" y="340" text-anchor="middle" font-size="10" font-weight="bold" fill="#2E7D32">Data Exposure</text>
+  <text x="130" y="354" text-anchor="middle" font-size="9" fill="#333">User's choice (plain or ghost)</text>
+
+  <line x1="40" y1="370" x2="220" y2="370" stroke="#2E7D32" stroke-opacity="0.2"/>
+
+  <text x="130" y="392" text-anchor="middle" font-size="9" font-weight="bold" fill="#2E7D32">Share Modes</text>
+  <text x="130" y="410" text-anchor="middle" font-size="8" fill="#555">View-once</text>
+  <text x="130" y="424" text-anchor="middle" font-size="8" fill="#555">View-limited (N sessions)</text>
+  <text x="130" y="438" text-anchor="middle" font-size="8" fill="#555">Time-bounded</text>
+  <text x="130" y="452" text-anchor="middle" font-size="8" fill="#555">Revocable</text>
+  <text x="130" y="466" text-anchor="middle" font-size="8" fill="#555">Permanent</text>
+
+  <line x1="40" y1="480" x2="220" y2="480" stroke="#2E7D32" stroke-opacity="0.2"/>
+
+  <text x="130" y="500" text-anchor="middle" font-size="9" font-weight="bold" fill="#2E7D32">Share Links</text>
+  <text x="130" y="518" text-anchor="middle" font-size="8" fill="#555">No vault needed to view</text>
+  <text x="130" y="532" text-anchor="middle" font-size="8" fill="#555">Rendered, not downloaded</text>
+  <text x="130" y="546" text-anchor="middle" font-size="8" fill="#555">Forensic watermarking</text>
+  <text x="130" y="560" text-anchor="middle" font-size="8" fill="#555">Password-protected (optional)</text>
+
+  <rect x="40" y="580" width="180" height="24" rx="4" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1"/>
+  <text x="130" y="596" text-anchor="middle" font-size="8" fill="#2E7D32" font-weight="bold">ONRAMP FOR NEW USERS</text>
+
+  <!-- ═══ CATEGORY 2: Institutional Verification ═══ -->
+  <rect x="260" y="200" width="210" height="420" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <rect x="260" y="200" width="210" height="40" rx="10" fill="#1565C0"/>
+  <rect x="260" y="224" width="210" height="16" fill="#1565C0"/>
+  <text x="365" y="226" text-anchor="middle" font-size="12" font-weight="bold" fill="white">VERIFICATION</text>
+
+  <text x="365" y="264" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">Authorization</text>
+  <text x="365" y="278" text-anchor="middle" font-size="9" fill="#333">User pre-authorization rules</text>
+
+  <text x="365" y="302" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">Key Lifetime</text>
+  <text x="365" y="316" text-anchor="middle" font-size="9" fill="#333">Seconds to minutes</text>
+
+  <text x="365" y="340" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">Data Exposure</text>
+  <rect x="290" y="348" width="150" height="20" rx="4" fill="#BBDEFB" stroke="#1565C0" stroke-width="1"/>
+  <text x="365" y="362" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="bold">GHOST ONLY (default)</text>
+
+  <line x1="280" y1="380" x2="450" y2="380" stroke="#1565C0" stroke-opacity="0.2"/>
+
+  <text x="365" y="400" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565C0">Flow</text>
+  <text x="365" y="418" text-anchor="middle" font-size="8" fill="#555">Merchant → requests verification</text>
+  <text x="365" y="432" text-anchor="middle" font-size="8" fill="#555">API → checks user's rules</text>
+  <text x="365" y="446" text-anchor="middle" font-size="8" fill="#555">Bank → generates ghost response</text>
+  <text x="365" y="460" text-anchor="middle" font-size="8" fill="#555">Merchant → receives yes/no proof</text>
+  <text x="365" y="474" text-anchor="middle" font-size="8" fill="#555">Key → expires immediately</text>
+
+  <line x1="280" y1="490" x2="450" y2="490" stroke="#1565C0" stroke-opacity="0.2"/>
+
+  <text x="365" y="510" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565C0">Key Separation</text>
+  <text x="365" y="528" text-anchor="middle" font-size="8" fill="#555">Two institutions' keys</text>
+  <text x="365" y="542" text-anchor="middle" font-size="8" fill="#555">never meet</text>
+  <text x="365" y="560" text-anchor="middle" font-size="8" fill="#555">Bonafide mediates</text>
+
+  <rect x="280" y="580" width="170" height="24" rx="4" fill="#BBDEFB" stroke="#1565C0" stroke-width="1"/>
+  <text x="365" y="596" text-anchor="middle" font-size="8" fill="#1565C0" font-weight="bold">NO RAW DATA EXCHANGED</text>
+
+  <!-- ═══ CATEGORY 3: Legal / Audit ═══ -->
+  <rect x="490" y="200" width="220" height="420" rx="10" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <rect x="490" y="200" width="220" height="40" rx="10" fill="#E65100"/>
+  <rect x="490" y="224" width="220" height="16" fill="#E65100"/>
+  <text x="600" y="226" text-anchor="middle" font-size="13" font-weight="bold" fill="white">LEGAL / AUDIT</text>
+
+  <text x="600" y="264" text-anchor="middle" font-size="10" font-weight="bold" fill="#E65100">Authorization</text>
+  <text x="600" y="278" text-anchor="middle" font-size="9" fill="#333">Validated legal instrument</text>
+
+  <text x="600" y="302" text-anchor="middle" font-size="10" font-weight="bold" fill="#E65100">Key Lifetime</text>
+  <text x="600" y="316" text-anchor="middle" font-size="9" fill="#333">Days to months</text>
+
+  <text x="600" y="340" text-anchor="middle" font-size="10" font-weight="bold" fill="#E65100">Data Exposure</text>
+  <text x="600" y="354" text-anchor="middle" font-size="9" fill="#333">Per instrument specification</text>
+
+  <line x1="510" y1="370" x2="690" y2="370" stroke="#E65100" stroke-opacity="0.2"/>
+
+  <text x="600" y="392" text-anchor="middle" font-size="9" font-weight="bold" fill="#E65100">Validation (6 checks)</text>
+  <text x="600" y="410" text-anchor="middle" font-size="8" fill="#555">Authority registration ✓</text>
+  <text x="600" y="424" text-anchor="middle" font-size="8" fill="#555">Hash uniqueness ✓</text>
+  <text x="600" y="438" text-anchor="middle" font-size="8" fill="#555">Scope verification ✓</text>
+  <text x="600" y="452" text-anchor="middle" font-size="8" fill="#555">Digital signature ✓</text>
+  <text x="600" y="466" text-anchor="middle" font-size="8" fill="#555">Jurisdiction check ✓</text>
+  <text x="600" y="480" text-anchor="middle" font-size="8" fill="#555">Duration reasonableness ✓</text>
+
+  <line x1="510" y1="494" x2="690" y2="494" stroke="#E65100" stroke-opacity="0.2"/>
+
+  <text x="600" y="514" text-anchor="middle" font-size="9" font-weight="bold" fill="#E65100">Access Modes</text>
+  <text x="600" y="532" text-anchor="middle" font-size="8" fill="#555">Snapshot (point-in-time copy)</text>
+  <text x="600" y="546" text-anchor="middle" font-size="8" fill="#555">Monitoring (ongoing read)</text>
+  <text x="600" y="564" text-anchor="middle" font-size="8" fill="#555">Multiple agencies → separate keys</text>
+
+  <rect x="510" y="580" width="180" height="24" rx="4" fill="#FFE0B2" stroke="#E65100" stroke-width="1"/>
+  <text x="600" y="596" text-anchor="middle" font-size="8" fill="#E65100" font-weight="bold">INSTITUTION NOT INVOLVED</text>
+
+  <!-- ═══ CATEGORY 4: Emergency ═══ -->
+  <rect x="730" y="200" width="210" height="420" rx="10" fill="#FCE4EC" stroke="#C62828" stroke-width="2"/>
+  <rect x="730" y="200" width="210" height="40" rx="10" fill="#C62828"/>
+  <rect x="730" y="224" width="210" height="16" fill="#C62828"/>
+  <text x="835" y="226" text-anchor="middle" font-size="13" font-weight="bold" fill="white">EMERGENCY</text>
+
+  <text x="835" y="264" text-anchor="middle" font-size="10" font-weight="bold" fill="#C62828">Authorization</text>
+  <text x="835" y="278" text-anchor="middle" font-size="9" fill="#333">Pre-configured profile</text>
+
+  <text x="835" y="302" text-anchor="middle" font-size="10" font-weight="bold" fill="#C62828">Key Lifetime</text>
+  <text x="835" y="316" text-anchor="middle" font-size="9" fill="#333">Hours (default 24h)</text>
+
+  <text x="835" y="340" text-anchor="middle" font-size="10" font-weight="bold" fill="#C62828">Data Exposure</text>
+  <text x="835" y="354" text-anchor="middle" font-size="9" fill="#333">Medical / identity only</text>
+
+  <line x1="750" y1="370" x2="920" y2="370" stroke="#C62828" stroke-opacity="0.2"/>
+
+  <text x="835" y="392" text-anchor="middle" font-size="9" font-weight="bold" fill="#C62828">Profile Specifies</text>
+  <text x="835" y="410" text-anchor="middle" font-size="8" fill="#555">Data scope</text>
+  <text x="835" y="424" text-anchor="middle" font-size="8" fill="#555">Emergency recipients</text>
+  <text x="835" y="438" text-anchor="middle" font-size="8" fill="#555">Activation method</text>
+  <text x="835" y="452" text-anchor="middle" font-size="8" fill="#555">Duration</text>
+
+  <line x1="750" y1="468" x2="920" y2="468" stroke="#C62828" stroke-opacity="0.2"/>
+
+  <text x="835" y="488" text-anchor="middle" font-size="9" font-weight="bold" fill="#C62828">Recipients</text>
+  <text x="835" y="506" text-anchor="middle" font-size="8" fill="#555">Certified first responders</text>
+  <text x="835" y="520" text-anchor="middle" font-size="8" fill="#555">Named emergency contacts</text>
+  <text x="835" y="534" text-anchor="middle" font-size="8" fill="#555">Designated agent</text>
+
+  <text x="835" y="560" text-anchor="middle" font-size="9" font-weight="bold" fill="#C62828">Duress-Aware</text>
+  <text x="835" y="578" text-anchor="middle" font-size="8" fill="#555">Respects persona architecture</text>
+
+  <rect x="750" y="590" width="170" height="24" rx="4" fill="#FFCDD2" stroke="#C62828" stroke-width="1"/>
+  <text x="835" y="606" text-anchor="middle" font-size="8" fill="#C62828" font-weight="bold">OPTIONAL — USER CONFIGURES</text>
+
+  <!-- Footer -->
+  <text x="480" y="648" text-anchor="middle" font-size="10" fill="#999">BONAFIDE™ SPECIFICATION V1.0 — Part 12, Sections 4–8</text>
+  <text x="480" y="664" text-anchor="middle" font-size="9" fill="#BBB">Sly Technologies Inc. — bonafide.id</text>
+</svg>

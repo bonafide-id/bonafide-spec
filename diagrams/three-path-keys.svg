@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-to-end">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4E79"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-to-end">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2E7D32"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-to-end">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E65100"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-to-end">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6A1B9A"/>
+    </marker>
+    <linearGradient id="quantumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F4E79;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#1F4E79;stop-opacity:0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1F4E79">THREE-PATH KEY ARCHITECTURE</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#666">Every quantum's DEK is wrapped independently for each authorized key path</text>
+
+  <!-- ═══ LEFT COLUMN: Three Key Sources ═══ -->
+
+  <!-- User Key Path -->
+  <rect x="30" y="100" width="240" height="120" rx="12" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+  <text x="150" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">USER KEY</text>
+  <text x="150" y="128" text-anchor="middle" font-size="9" font-weight="bold" fill="#2E7D32" dy="16">SOVEREIGN</text>
+  <line x1="60" y1="152" x2="240" y2="152" stroke="#2E7D32" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="150" y="170" text-anchor="middle" font-size="10" fill="#333">Bio Root → Branch Key → DEK</text>
+  <text x="150" y="186" text-anchor="middle" font-size="9" fill="#666">Only the user holds this key</text>
+  <text x="150" y="202" text-anchor="middle" font-size="9" fill="#666">Works across all institutions</text>
+
+  <!-- Institutional Key Path -->
+  <rect x="30" y="260" width="240" height="120" rx="12" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="150" y="288" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">INSTITUTIONAL KEY</text>
+  <text x="150" y="288" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565C0" dy="16">SACROSANCT</text>
+  <line x1="60" y1="312" x2="240" y2="312" stroke="#1565C0" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="150" y="330" text-anchor="middle" font-size="10" fill="#333">Master Key → Branch Key → DEK</text>
+  <text x="150" y="346" text-anchor="middle" font-size="9" fill="#666">Authorized operations only</text>
+  <text x="150" y="362" text-anchor="middle" font-size="9" fill="#666">Cannot serve third-party access</text>
+
+  <!-- Third-Party Key Path -->
+  <rect x="30" y="420" width="240" height="120" rx="12" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <text x="150" y="448" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">THIRD-PARTY KEY</text>
+  <text x="150" y="448" text-anchor="middle" font-size="9" font-weight="bold" fill="#E65100" dy="16">PURPOSE-SPECIFIC</text>
+  <line x1="60" y1="472" x2="240" y2="472" stroke="#E65100" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="150" y="490" text-anchor="middle" font-size="10" fill="#333">Instrument Hash → Scoped Key</text>
+  <text x="150" y="506" text-anchor="middle" font-size="9" fill="#666">Generated on demand per authorization</text>
+  <text x="150" y="522" text-anchor="middle" font-size="9" fill="#666">Time-bounded, recipient-bound</text>
+
+  <!-- ═══ CENTER: Arrows to DEK Wrappings ═══ -->
+
+  <!-- User arrow -->
+  <line x1="270" y1="160" x2="430" y2="248" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <!-- Institution arrow -->
+  <line x1="270" y1="320" x2="430" y2="320" stroke="#1565C0" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Third-party arrow -->
+  <line x1="270" y1="480" x2="430" y2="392" stroke="#E65100" stroke-width="2" marker-end="url(#arrow-orange)"/>
+
+  <!-- ═══ CENTER: DEK Wrapping Box ═══ -->
+  <rect x="435" y="210" width="220" height="220" rx="12" fill="url(#quantumGrad)" stroke="#1F4E79" stroke-width="2.5"/>
+  <text x="545" y="240" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F4E79">QUANTUM</text>
+
+  <!-- Encrypted payload -->
+  <rect x="460" y="255" width="170" height="40" rx="6" fill="#F5F5F5" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="545" y="280" text-anchor="middle" font-size="11" fill="#666">Encrypted Payload</text>
+  <text x="545" y="292" text-anchor="middle" font-size="8" fill="#999">AES-256-GCM</text>
+
+  <!-- DEK wrapping - user -->
+  <rect x="460" y="305" width="170" height="28" rx="5" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="545" y="323" text-anchor="middle" font-size="10" fill="#2E7D32">🔑 User Wrapping</text>
+
+  <!-- DEK wrapping - institution -->
+  <rect x="460" y="340" width="170" height="28" rx="5" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="545" y="358" text-anchor="middle" font-size="10" fill="#1565C0">🔑 Institutional Wrapping</text>
+
+  <!-- DEK wrapping - third party -->
+  <rect x="460" y="375" width="170" height="28" rx="5" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="545" y="393" text-anchor="middle" font-size="10" fill="#E65100">🔑 Third-Party Wrapping(s)</text>
+
+  <!-- ═══ RIGHT: Properties ═══ -->
+
+  <line x1="655" y1="319" x2="710" y2="319" stroke="#1F4E79" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="715" y="115" width="220" height="410" rx="12" fill="#FAFAFA" stroke="#CCC" stroke-width="1.5"/>
+  <text x="825" y="142" text-anchor="middle" font-size="12" font-weight="bold" fill="#1F4E79">KEY PROPERTIES</text>
+  <line x1="735" y1="152" x2="915" y2="152" stroke="#CCC" stroke-width="1"/>
+
+  <!-- Properties list -->
+  <text x="735" y="176" font-size="10" font-weight="bold" fill="#333">Each wrapping is:</text>
+
+  <circle cx="745" cy="200" r="3" fill="#2E7D32"/>
+  <text x="755" y="204" font-size="10" fill="#333">Independent</text>
+  <text x="755" y="216" font-size="9" fill="#777">Revoking one doesn't affect others</text>
+
+  <circle cx="745" cy="240" r="3" fill="#2E7D32"/>
+  <text x="755" y="244" font-size="10" fill="#333">Scope-bound</text>
+  <text x="755" y="256" font-size="9" fill="#777">Key decrypts only authorized data</text>
+
+  <circle cx="745" cy="280" r="3" fill="#2E7D32"/>
+  <text x="755" y="284" font-size="10" fill="#333">Time-bound</text>
+  <text x="755" y="296" font-size="9" fill="#777">Expires per authorization duration</text>
+
+  <circle cx="745" cy="320" r="3" fill="#2E7D32"/>
+  <text x="755" y="324" font-size="10" fill="#333">Recipient-bound</text>
+  <text x="755" y="336" font-size="9" fill="#777">Cannot be transferred</text>
+
+  <circle cx="745" cy="360" r="3" fill="#2E7D32"/>
+  <text x="755" y="364" font-size="10" fill="#333">Audited</text>
+  <text x="755" y="376" font-size="9" fill="#777">Every access in immutable ledger</text>
+
+  <circle cx="745" cy="400" r="3" fill="#2E7D32"/>
+  <text x="755" y="404" font-size="10" fill="#333">Revocable</text>
+  <text x="755" y="416" font-size="9" fill="#777">Authorizing party can revoke early</text>
+
+  <line x1="735" y1="432" x2="915" y2="432" stroke="#CCC" stroke-width="1"/>
+  <text x="825" y="454" text-anchor="middle" font-size="9" font-weight="bold" fill="#1F4E79">INSTITUTIONAL KEY CANNOT</text>
+  <text x="825" y="468" text-anchor="middle" font-size="9" font-weight="bold" fill="#1F4E79">SERVE THIRD-PARTY ACCESS</text>
+  <text x="825" y="484" text-anchor="middle" font-size="9" fill="#666">Architectural enforcement,</text>
+  <text x="825" y="496" text-anchor="middle" font-size="9" fill="#666">not policy restriction</text>
+
+  <!-- Footer -->
+  <text x="480" y="580" text-anchor="middle" font-size="10" fill="#999">BONAFIDE™ SPECIFICATION V1.0 — Part 12, Section 3</text>
+  <text x="480" y="596" text-anchor="middle" font-size="9" fill="#BBB">Sly Technologies Inc. — bonafide.id</text>
+</svg>

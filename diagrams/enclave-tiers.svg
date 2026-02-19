@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="Arial, Helvetica, sans-serif">
+
+  <!-- Title -->
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1F4E79">ENCLAVE TIER SYSTEM</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#666">Hardware determines maximum security level — cryptographic enforcement, not policy</text>
+
+  <!-- Column headers -->
+  <text x="100" y="90" text-anchor="middle" font-size="11" font-weight="bold" fill="#1F4E79">TIER</text>
+  <text x="270" y="90" text-anchor="middle" font-size="11" font-weight="bold" fill="#1F4E79">MAX LEVEL</text>
+  <text x="490" y="90" text-anchor="middle" font-size="11" font-weight="bold" fill="#1F4E79">USER DEVICES</text>
+  <text x="780" y="90" text-anchor="middle" font-size="11" font-weight="bold" fill="#1F4E79">SERVER HARDWARE</text>
+
+  <line x1="30" y1="100" x2="930" y2="100" stroke="#1F4E79" stroke-width="1.5"/>
+
+  <!-- ═══ TIER S ═══ -->
+  <rect x="30" y="110" width="140" height="74" rx="8" fill="#1B5E20"/>
+  <text x="100" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="white">TIER S</text>
+  <text x="100" y="160" text-anchor="middle" font-size="9" fill="#A5D6A7">FPGA / Dedicated SE</text>
+  <text x="100" y="174" text-anchor="middle" font-size="8" fill="#81C784">Side-channel hardened</text>
+
+  <!-- Level bar S -->
+  <rect x="200" y="118" width="140" height="58" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="270" y="142" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B5E20">Level 9</text>
+  <text x="270" y="160" text-anchor="middle" font-size="9" fill="#2E7D32">Sovereign</text>
+  <text x="270" y="172" text-anchor="middle" font-size="8" fill="#666">Bio Root material</text>
+
+  <!-- User devices S -->
+  <rect x="370" y="118" width="240" height="58" rx="6" fill="#FAFAFA" stroke="#CCC" stroke-width="1"/>
+  <text x="490" y="138" text-anchor="middle" font-size="9" fill="#999">No consumer devices at Tier S</text>
+  <text x="490" y="154" text-anchor="middle" font-size="8" fill="#BBB">Future: dedicated Bonafide hardware</text>
+
+  <!-- Server S -->
+  <rect x="630" y="118" width="300" height="58" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="780" y="138" text-anchor="middle" font-size="10" font-weight="bold" fill="#1B5E20">ExaForge FPGA</text>
+  <text x="780" y="154" text-anchor="middle" font-size="9" fill="#333">PUF keys · In-fabric AES · In-fabric HKDF</text>
+  <text x="780" y="168" text-anchor="middle" font-size="8" fill="#666">Classification S</text>
+
+  <!-- ═══ TIER 1 ═══ -->
+  <rect x="30" y="198" width="140" height="74" rx="8" fill="#1565C0"/>
+  <text x="100" y="228" text-anchor="middle" font-size="22" font-weight="bold" fill="white">TIER 1</text>
+  <text x="100" y="248" text-anchor="middle" font-size="9" fill="#90CAF9">Dedicated Secure Element</text>
+  <text x="100" y="262" text-anchor="middle" font-size="8" fill="#64B5F6">Physical + logical tamper</text>
+
+  <rect x="200" y="206" width="140" height="58" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="270" y="230" text-anchor="middle" font-size="16" font-weight="bold" fill="#1565C0">Level 8</text>
+  <text x="270" y="248" text-anchor="middle" font-size="9" fill="#1565C0">Critical</text>
+  <text x="270" y="260" text-anchor="middle" font-size="8" fill="#666">Biometric templates</text>
+
+  <rect x="370" y="206" width="240" height="58" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1"/>
+  <text x="490" y="224" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">iPhone SEP · Pixel Titan M2</text>
+  <text x="490" y="240" text-anchor="middle" font-size="9" fill="#333">Samsung Knox · MacBook Apple Silicon</text>
+  <text x="490" y="256" text-anchor="middle" font-size="8" fill="#666">Best consumer enclave tier</text>
+
+  <rect x="630" y="206" width="300" height="58" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1"/>
+  <text x="780" y="226" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">Dedicated HSM + SE</text>
+  <text x="780" y="242" text-anchor="middle" font-size="9" fill="#333">Thales Luna · Entrust nShield</text>
+  <text x="780" y="256" text-anchor="middle" font-size="8" fill="#666">Classification A+</text>
+
+  <!-- ═══ TIER 2 ═══ -->
+  <rect x="30" y="286" width="140" height="74" rx="8" fill="#E65100"/>
+  <text x="100" y="316" text-anchor="middle" font-size="22" font-weight="bold" fill="white">TIER 2</text>
+  <text x="100" y="336" text-anchor="middle" font-size="9" fill="#FFCC80">Trusted Execution Env.</text>
+  <text x="100" y="350" text-anchor="middle" font-size="8" fill="#FFB74D">Hardware-attested isolation</text>
+
+  <rect x="200" y="294" width="140" height="58" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="270" y="318" text-anchor="middle" font-size="16" font-weight="bold" fill="#E65100">Level 7</text>
+  <text x="270" y="336" text-anchor="middle" font-size="9" fill="#E65100">Classified</text>
+  <text x="270" y="348" text-anchor="middle" font-size="8" fill="#666">Trade secrets, defense</text>
+
+  <rect x="370" y="294" width="240" height="58" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="490" y="312" text-anchor="middle" font-size="10" font-weight="bold" fill="#E65100">Mid-range Android (TrustZone)</text>
+  <text x="490" y="328" text-anchor="middle" font-size="9" fill="#333">Intel MacBook (T2) · FIDO2 key</text>
+  <text x="490" y="344" text-anchor="middle" font-size="8" fill="#666">Apple Watch · RPi 5 + OP-TEE</text>
+
+  <rect x="630" y="294" width="300" height="58" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="780" y="312" text-anchor="middle" font-size="10" font-weight="bold" fill="#E65100">SGX · SEV-SNP · TrustZone</text>
+  <text x="780" y="328" text-anchor="middle" font-size="9" fill="#333">AWS Nitro · Azure Confidential · BlueField</text>
+  <text x="780" y="344" text-anchor="middle" font-size="8" fill="#666">Classification A (cloud-native path)</text>
+
+  <!-- ═══ TIER 3 ═══ -->
+  <rect x="30" y="374" width="140" height="74" rx="8" fill="#757575"/>
+  <text x="100" y="404" text-anchor="middle" font-size="22" font-weight="bold" fill="white">TIER 3</text>
+  <text x="100" y="424" text-anchor="middle" font-size="9" fill="#E0E0E0">TPM / Basic Hardware</text>
+  <text x="100" y="438" text-anchor="middle" font-size="8" fill="#BDBDBD">Key storage only</text>
+
+  <rect x="200" y="382" width="140" height="58" rx="6" fill="#F5F5F5" stroke="#757575" stroke-width="1.5"/>
+  <text x="270" y="406" text-anchor="middle" font-size="16" font-weight="bold" fill="#616161">Level 5</text>
+  <text x="270" y="424" text-anchor="middle" font-size="9" fill="#757575">Protected</text>
+  <text x="270" y="436" text-anchor="middle" font-size="8" fill="#666">Medical, legal docs</text>
+
+  <rect x="370" y="382" width="240" height="58" rx="6" fill="#F5F5F5" stroke="#757575" stroke-width="1"/>
+  <text x="490" y="400" text-anchor="middle" font-size="10" font-weight="bold" fill="#616161">Windows (TPM 2.0)</text>
+  <text x="490" y="416" text-anchor="middle" font-size="9" fill="#333">Linux (TPM 2.0) · Chromebook</text>
+  <text x="490" y="432" text-anchor="middle" font-size="8" fill="#666">RPi 5 + TPM HAT</text>
+
+  <rect x="630" y="382" width="300" height="58" rx="6" fill="#F5F5F5" stroke="#757575" stroke-width="1"/>
+  <text x="780" y="400" text-anchor="middle" font-size="10" font-weight="bold" fill="#616161">HSM + QAT Accelerator</text>
+  <text x="780" y="416" text-anchor="middle" font-size="9" fill="#333">TPM + GPU bulk crypto</text>
+  <text x="780" y="432" text-anchor="middle" font-size="8" fill="#666">Classification B</text>
+
+  <!-- ═══ TIER 4 ═══ -->
+  <rect x="30" y="462" width="140" height="74" rx="8" fill="#B71C1C"/>
+  <text x="100" y="492" text-anchor="middle" font-size="22" font-weight="bold" fill="white">TIER 4</text>
+  <text x="100" y="512" text-anchor="middle" font-size="9" fill="#EF9A9A">Software Only</text>
+  <text x="100" y="526" text-anchor="middle" font-size="8" fill="#E57373">No hardware isolation</text>
+
+  <rect x="200" y="470" width="140" height="58" rx="6" fill="#FFEBEE" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="270" y="494" text-anchor="middle" font-size="16" font-weight="bold" fill="#B71C1C">Level 3</text>
+  <text x="270" y="512" text-anchor="middle" font-size="9" fill="#C62828">Confidential</text>
+  <text x="270" y="524" text-anchor="middle" font-size="8" fill="#666">Gov IDs, DOB, tax ID</text>
+
+  <rect x="370" y="470" width="240" height="58" rx="6" fill="#FFEBEE" stroke="#B71C1C" stroke-width="1"/>
+  <text x="490" y="488" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">Budget Android (no SE)</text>
+  <text x="490" y="504" text-anchor="middle" font-size="9" fill="#333">Windows (no TPM) · Linux (no TPM)</text>
+  <text x="490" y="520" text-anchor="middle" font-size="8" fill="#666">Limited vault capabilities</text>
+
+  <rect x="630" y="470" width="300" height="58" rx="6" fill="#FFEBEE" stroke="#B71C1C" stroke-width="1"/>
+  <text x="780" y="488" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">Software-only runtime</text>
+  <text x="780" y="504" text-anchor="middle" font-size="9" fill="#333">Encrypted keyring, software AES</text>
+  <text x="780" y="520" text-anchor="middle" font-size="8" fill="#666">Classification C (starting point)</text>
+
+  <!-- Footer -->
+  <text x="480" y="568" text-anchor="middle" font-size="10" fill="#999">BONAFIDE™ SPECIFICATION V1.0 — Part 10, Sections 3–7</text>
+  <text x="480" y="584" text-anchor="middle" font-size="9" fill="#BBB">Sly Technologies Inc. — bonafide.id</text>
+</svg>
